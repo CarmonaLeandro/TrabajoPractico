@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between; /* Distribuye el menú y el botón en los extremos */
+  align-items: center; /* Los centra verticalmente */
+  background-color: #7f8c8d; /* El color gris de tu fondo actual */
+  padding: 15px 30px;
+  margin: -10px;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+main {
+  text-align: center;
+}
+.servicios-cotainer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
