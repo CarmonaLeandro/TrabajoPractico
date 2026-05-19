@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservar Ahora - GO BY CAR</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./public/Logo_De_La_Empresa-Photoroom.ico" />
+  </head>
+  <body class="reserva-body">
+    <header class="sitio-header">
+      <div class="header-marca">
+        <img
+          src="./public/Logo_De_La_Empresa-Photoroom.png"
+          alt="GO BY CAR"
+          class="header-logo"
+        />
+      </div>
+      <nav class="header-nav">
+        <ul class="nav-lista">
+          <li><a href="index.html" class="nav-enlace">Inicio</a></li>
+          <li>
+            <a href="index.html#servicios" class="nav-enlace">Servicios</a>
+          </li>
+          <li>
+            <a href="index.html#vehiculos" class="nav-enlace">Destacados</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-accion">
+        <a href="index.html" class="btn-reservar-header">Volver al Inicio</a>
+      </div>
+    </header>
+
+    <main class="formulario-main">
+      <section class="form-container">
+        <div class="form-card">
+          <h1>Reserva tu Vehículo</h1>
+          <p class="form-instrucciones">
+            Completá el formulario para que un asesor se contacte con vos.
+          </p>
+
+          <form action="#" method="POST" class="formulario-estilizado">
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <div class="form-grid">
+                <div class="campo">
+                  <label for="nombre">Nombre y Apellido *</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Juan Pérez"
+                    required
+                  />
+                </div>
+                <div class="campo">
+                  <label for="email">Correo Electrónico *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="juan@ejemplo.com"
+                    required
+                  />
+                </div>
+                <div class="campo">
+                  <label for="telefono">Teléfono de Contacto *</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="11 1234 5678"
+                    required
+                  />
+                </div>
+                <div class="campo">
+                  <label for="dni">DNI / Pasaporte *</label>
+                  <input
+                    type="text"
+                    id="dni"
+                    name="dni"
+                    placeholder="Sin puntos ni espacios"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Detalles del Alquiler</legend>
+              <div class="form-grid">
+                <div class="campo">
+                  <label for="vehiculo">Vehículo de Interés *</label>
+                  <select id="vehiculo" name="vehiculo" required>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="lancer">Lancer Evolution</option>
+                    <option value="skyline">Skyline R34</option>
+                    <option value="porsche">Porsche 911</option>
+                  </select>
+                </div>
+                <div class="campo">
+                  <label for="sucursal">Sucursal de Retiro *</label>
+                  <select id="sucursal" name="sucursal" required>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="centro">Sucursal Centro</option>
+                    <option value="aeropuerto">Sucursal Aeropuerto</option>
+                  </select>
+                </div>
+                <div class="campo">
+                  <label for="fecha">Fecha de Retiro *</label>
+                  <input type="date" id="fecha" name="fecha" required />
+                </div>
+                <div class="campo">
+                  <label for="hora">Hora de Retiro *</label>
+                  <input type="time" id="hora" name="hora" required />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Método de Pago Preferido</legend>
+              <div class="opciones-pago">
+                <label class="radio-label">
+                  <input type="radio" name="pago" value="efectivo" required />
+                  Efectivo / Transferencia
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="pago" value="tarjeta" /> Tarjeta de
+                  Crédito
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Servicios Adicionales</legend>
+              <div class="opciones-extras">
+                <label class="check-label">
+                  <input type="checkbox" name="extra" value="gps" /> GPS
+                  Satelital
+                </label>
+                <label class="check-label">
+                  <input type="checkbox" name="extra" value="seguro" /> Seguro
+                  Premium
+                </label>
+                <label class="check-label">
+                  <input type="checkbox" name="extra" value="limpieza" />
+                  Limpieza Incluida
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="campo">
+              <label for="mensaje">Comentarios Adicionales</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="¿Alguna especificación extra?"
+              ></textarea>
+            </div>
+
+            <div class="form-acciones">
+              <button type="submit" class="btn-enviar">
+                Confirmar Reserva
+              </button>
+              <button type="reset" class="btn-limpiar">Limpiar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sitio-footer">
+      <div class="footer-inferior">
+        <p>&copy; 2026 GO BY CAR - Sistema de Reservas</p>
+      </div>
+    </footer>
+  </body>
+</html>

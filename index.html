@@ -7,64 +7,237 @@
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="icon"
-      href="./public/favicon.ico"
-      sizes="16px"
+      href="./public/Logo_De_La_Empresa-Photoroom.ico"
       type="image/x-ico"
     />
   </head>
   <body>
-    <header>
-      <img
-        src="./public/Logo_De_La_Empresa.png"
-        alt="logo de la empresa"
-        height="100px"
-      />
-      <nav>
-        <ul class="nav-menu">
-          <div><a href="">INICO</a></div>
-          <div><a href="">DESTACADOS</a></div>
-          <div><a href="">NOSOTROS</a></div>
-          <div><a href="">AYUDA</a></div>
+    <header class="sitio-header">
+      <div class="header-marca">
+        <img
+          src="./public/Logo_De_La_Empresa-Photoroom.png"
+          alt="GO BY CAR"
+          class="header-logo"
+        />
+      </div>
+
+      <nav class="header-nav">
+        <ul class="nav-lista">
+          <li><a href="#inicio" class="nav-enlace">Inicio</a></li>
+          <li><a href="#servicios" class="nav-enlace">Servicios</a></li>
+          <li><a href="#destacados" class="nav-enlace">Destacados</a></li>
+          <li><a href="#nosotros" class="nav-enlace">Nosotros</a></li>
+          <li><a href="#footer" class="nav-enlace">Contacto</a></li>
         </ul>
       </nav>
-      <a href="./reserve.html" class="btn-principal">Reservar Ahora</a>
+
+      <div class="header-accion">
+        <a href="reserva.html" class="btn-reservar-header">Reservar Ahora</a>
+      </div>
     </header>
-    <main>
-      <h1>Go By Car</h1>
-      <img
-        src="./public/banner.png"
-        alt="imagen de un auto andando en carretera"
-        width="100%"
-      />
-      <p>aca va una frase re piola</p>
-      <button>EMPEZAR AHORA</button>
+    <main id="inicio">
+      <section class="hero-section">
+        <div class="hero-container">
+          <img
+            src="./public/banner.png"
+            alt="Auto en la ruta"
+            class="hero-bg-img"
+          />
+          <div class="hero-overlay-content">
+            <h1>Tu viaje empieza con total comodidad</h1>
+            <p>
+              Descubrí la flota más confiable y los precios más justos del
+              mercado.
+            </p>
+            <a href="reserva.html" class="btn-hero-action">Empezar Ahora</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <section class="servicios-cotainer">
-      <article class="servicios-box">
-        <img src="" alt="" />
-        <h3>alquiler por dia</h3>
-        <p>descripcion xd</p>
-      </article>
-      <article class="servicios-box">
-        <img src="" alt="" />
-        <h3>alquiler corporativo</h3>
-        <p>descripcion xd</p>
-      </article>
-      <article class="servicios-box">
-        <img src="" alt="" />
-        <h3>asistencia en ruta</h3>
-        <p>descripcion xd</p>
-      </article>
-      <article class="servicios-box">
-        <img src="" alt="" />
-        <h3>seguros</h3>
-        <p>descripcion xd</p>
-      </article>
-      <article class="servicios-box">
-        <img src="" alt="" />
-        <h3>entrega a domicilio</h3>
-        <p>descripcion xd</p>
-      </article>
+    <section id="servicios" class="servicios-section">
+      <h2 class="seccion-titulo">Nuestros Servicios</h2>
+      <div class="servicios-grid">
+        <article class="servicio-box">
+          <div class="servicio-imagen-wrapper">
+            <img
+              src="./public/Servicios/Por-dia-Photoroom.png"
+              alt="Ícono Alquiler por día"
+            />
+          </div>
+          <h3>Alquiler por día</h3>
+          <p>
+            Disponibilidad inmediata y tarifas flexibles por jornada para lo que
+            necesites.
+          </p>
+        </article>
+
+        <article class="servicio-box">
+          <div class="servicio-imagen-wrapper">
+            <img
+              src="./public/Servicios/Domicilio-Photoroom.png"
+              alt="Ícono Entrega a domicilio"
+            />
+          </div>
+          <h3>Entrega a domicilio</h3>
+          <p>
+            Llevamos y retiramos el vehículo en la puerta de tu casa o el hotel
+            donde te hospedes.
+          </p>
+        </article>
+
+        <article class="servicio-box">
+          <div class="servicio-imagen-wrapper">
+            <img
+              src="./public/Servicios/seguro-Photoroom.png"
+              alt="Ícono Seguro del auto"
+            />
+          </div>
+          <h3>Seguro del auto</h3>
+          <p>
+            Todas las unidades cuentan con cobertura total para que viajes con
+            absoluta tranquilidad.
+          </p>
+        </article>
+
+        <article class="servicio-box">
+          <div class="servicio-imagen-wrapper">
+            <img
+              src="./public/Servicios/Ayuda-Photoroom.png"
+              alt="Ícono Asistencia técnica"
+            />
+          </div>
+          <h3>Asistencia 24/7</h3>
+          <p>
+            Soporte telefónico y auxilio mecánico en ruta ante cualquier
+            imprevisto en el camino.
+          </p>
+        </article>
+      </div>
     </section>
+    <section id="destacados" class="vehiculos-section">
+      <h2 class="seccion-titulo">Vehículos Destacados</h2>
+
+      <div class="vehiculos-grid">
+        <article class="vehiculo-box">
+          <div class="vehiculo-imagen">
+            <img
+              src="./public/vehiculos/Autos/lancer.png"
+              alt="Lancer Evolution"
+            />
+          </div>
+          <div class="vehiculo-info">
+            <span class="vehiculo-tipo">Deportivo / Sedán</span>
+            <h3>Lancer Evolution</h3>
+            <div class="vehiculo-precio">20.000 <span>c/día</span></div>
+            <p class="vehiculo-descripcion">
+              Pura sangre del asfalto. Adrenalina y control total en cualquier
+              superficie.
+            </p>
+            <a href="reserva.html" class="btn-tarjeta-reserva">Reservar</a>
+          </div>
+        </article>
+
+        <article class="vehiculo-box">
+          <div class="vehiculo-imagen">
+            <img src="./public/vehiculos/Autos/niisan->.<.png" alt="Skyline" />
+          </div>
+          <div class="vehiculo-info">
+            <span class="vehiculo-tipo">Coupé / Deportivo</span>
+            <h3>Skyline</h3>
+            <div class="vehiculo-precio">30.000 <span>c/día</span></div>
+            <p class="vehiculo-descripcion">
+              La leyenda japonesa. Un mito de la velocidad directo a tu garaje.
+            </p>
+            <a href="reserva.html" class="btn-tarjeta-reserva">Reservar</a>
+          </div>
+        </article>
+
+        <article class="vehiculo-box">
+          <div class="vehiculo-imagen">
+            <img src="./public/vehiculos/Autos/porche.png" alt="Porsche" />
+          </div>
+          <div class="vehiculo-info">
+            <span class="vehiculo-tipo">Superdeportivo</span>
+            <h3>Porsche</h3>
+            <div class="vehiculo-precio">30.000 <span>c/día</span></div>
+            <p class="vehiculo-descripcion">
+              Ingeniería de pista. El balance perfecto entre elegancia y
+              rendimiento extremo.
+            </p>
+            <a href="reserva.html" class="btn-tarjeta-reserva">Reservar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="nosotros" class="nosotros-section">
+      <div class="nosotros-card">
+        <h2>Sobre Nosotros</h2>
+        <p class="nosotros-intro">
+          Somos una empresa dedicada a conectar a las personas con sus destinos,
+          facilitando soluciones de transporte accesibles, rápidas y confiables
+          para cada momento de su vida.
+        </p>
+
+        <div class="nosotros-detalles-grid">
+          <article class="nosotros-item">
+            <h3>Nuestra Historia</h3>
+            <p>
+              Nacimos de una necesidad real: la frustración de querer viajar,
+              asistir a un evento o movilizarse y no contar con un vehículo
+              propio. Inspirados en superar esas barreras, creamos un sistema
+              ágil para que nadie se quede sin llegar a su destino.
+            </p>
+          </article>
+
+          <article class="nosotros-item">
+            <h3>Nuestra Experiencia</h3>
+            <p>
+              Con años en el rubro del alquiler de vehículos, hemos consolidado
+              una flota moderna y variada. Nos especializamos en brindar una
+              atención personalizada que garantiza que cada cliente encuentre el
+              auto ideal para su viaje.
+            </p>
+          </article>
+
+          <article class="nosotros-item">
+            <h3>Misión y Valores</h3>
+            <p>
+              Nuestra misión es moverte con total libertad. Nos guían la
+              transparencia absoluta en los precios, la máxima seguridad en el
+              mantenimiento de nuestras unidades y el compromiso con la
+              comodidad de quienes confían en nosotros.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="sitio-footer">
+      <div class="footer-container">
+        <div class="footer-columna">
+          <h3>Contacto</h3>
+          <p>📍 Dirección: Av. Central 1234, Buenos Aires</p>
+          <p>📞 Teléfono: +54 11 4567-8910</p>
+          <p>✉️ Correo: contacto@gobycar.com</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Horarios</h3>
+          <p>🕒 Lunes a Sábados</p>
+          <p>De 08:00 a 20:00 hs</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Síguenos</h3>
+          <div class="footer-redes">
+            <a href="#" class="red-enlace">Facebook</a>
+            <a href="#" class="red-enlace">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-inferior">
+        <p>&copy; 2026 GO BY CAR - Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>
